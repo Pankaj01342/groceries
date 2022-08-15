@@ -29,24 +29,35 @@
   width: 100vw;
 }
 
-.search{
+.searchBar{
+  height: 60px;
+  margin: 5px;
+  border: 1px solid rgb(177, 175, 175);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search > input{
-  padding:5px 0;
+.searchBar > input{
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  background-color: rgb(221, 236, 221);
+  color: rgb(65, 64, 64);
   border: hidden;
-  border-bottom: 1px solid white;
+  width: 90vw;
 }
 
-.search > input:focus{
+.searchBar > input:focus{
   outline: none;
+}
+
+.search{
+  width: 80px;
+  background-color: #5aac5d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 44px;
 }
 
 .callButton {
@@ -109,5 +120,9 @@
 @media screen and (max-width:480px) {
   .search > input{
     padding: 0;
+  }
+
+  .item:nth-child(2){
+    flex: 4;
   }
 }

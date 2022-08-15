@@ -9,6 +9,7 @@
   position: absolute;
   width: 10%;
   height: 20%;
+  padding-left: 35px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -32,5 +33,9 @@
 @media screen and (max-width: 480px) {
   .container{
     height: 29vh;
+  }
+
+  .arrowContainer{
+    padding-left: 5px;
   }
 }
