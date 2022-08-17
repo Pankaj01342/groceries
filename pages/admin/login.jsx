@@ -11,11 +11,11 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("http://localhost:3000/api/login", {
+      await axios.post("https://pkgrocery.herokuapp.com/api/login", {
         username,
         password,
       });
-      router.push("http://localhost:3000/admin");
+      router.push("https://pkgrocery.herokuapp.com/admin");
     } catch (err) {
       setError(true);
     }
